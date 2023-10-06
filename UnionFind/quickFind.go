@@ -1,13 +1,6 @@
 package main
 
-func InitQuickFind(n int) []int {
-	var id []int
-	for i := 0; i < n; i++ {
-		id = append(id, i)
-	}
-
-	return id
-}
+// Union Find is too slow because it has N^2 time complexity
 
 func Connected(p int, q int, id_array []int) bool {
 	return id_array[p] == id_array[q]
