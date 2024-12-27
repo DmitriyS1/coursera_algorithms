@@ -15,7 +15,7 @@ func Test(t *testing.T) {
 
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
-			result := LengthOfLastWord(tc.data)
+			result := lengthOfLastWord(tc.data)
 			if result != tc.expected {
 				t.Errorf("For test %s, expected result is %d but got %d", tc.name, tc.expected, result)
 			}

@@ -2,7 +2,7 @@ package easy
 
 import "unicode"
 
-func LengthOfLastWord(s string) int {
+func lengthOfLastWord(s string) int {
 	length := 0
 	lastSymbolIsSpace := false
 	for _, r := range s {

@@ -43,7 +43,7 @@ Constraints:
 
 */
 
-func Merge(nums1 []int, m int, nums2 []int, n int) {
+func merge(nums1 []int, m int, nums2 []int, n int) {
 	// Error: the array under the slice is the pointer to the real array, so every time you change an array, data in the slice changes too
 	numsOne := make([]int, m)
 	copy(numsOne, nums1[:m])
