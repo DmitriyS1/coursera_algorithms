@@ -1,6 +1,9 @@
 package medium
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestJumpGame(t *testing.T) {
 	testCases := []struct {
@@ -22,4 +25,18 @@ func TestJumpGame(t *testing.T) {
 			}
 		})
 	}
+}
+
+func TestPtrs(t *testing.T) {
+	v := 5
+	p := &v
+
+	fmt.Println(*p)
+	changePtr(p)
+	fmt.Println(*p)
+}
+
+func changePtr(ptr *int) {
+	v := 3
+	ptr = &v
 }
